@@ -1,7 +1,7 @@
 name 'holmes-node-exporter'
 maintainer 'Patrick Dayton'
 maintainer_email 'daytonpa@gmail.com'
-license 'All Rights Reserved'
+license 'Apache-2.0'
 description 'Installs/Configures holmes-node-exporter'
 long_description 'Installs/Configures holmes-node-exporter'
 version '1.0.1'
@@ -11,7 +11,7 @@ chef_version '>= 14.0'
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
 # uploaded to a Supermarket.
 #
-# issues_url 'https://github.com/daytonpa/holmes-node-exporter/issues'
+issues_url 'https://github.com/daytonpa/holmes-node-exporter/issues'
 
 # The `source_url` points to the development repository for this cookbook.  A
 # `View Source` link will be displayed on this cookbook's page when uploaded to
