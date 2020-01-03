@@ -1,0 +1,14 @@
+[Unit]
+Description=Node Exporter <%= node['holmes-node-exporter']['version'] %>
+
+[Service]
+Type=simple
+User=<%= node['holmes-node-exporter']['user'] %>
+Group=<%= node['holmes-node-exporter']['group'] %>
+PIDFile=<%= node['holmes-node-exporter']['path']['pid'] %>
+ExecStart=<%= node['holmes-node-exporter']['path']['bin'] %> \
+          <%= generate_node_exporter_config %>
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
